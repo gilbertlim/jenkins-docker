@@ -6,6 +6,5 @@ docker run \
   --publish 8082:8080 \
   --publish 50002:50000 \
   --volume $(dirname $(realpath $0))/jenkins:/var/jenkins_home \
-  --volume /usr/bin/docker:/usr/bin/docker \
   --volume /var/run/docker.sock:/var/run/docker.sock \
   jenkins:lts
