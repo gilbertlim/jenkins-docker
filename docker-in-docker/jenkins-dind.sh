@@ -17,7 +17,7 @@ docker run \
   --storage-driver overlay2
 
 docker build \
-  --build-arg ARCHITECTURE=arm64 \
+  --build-arg ARCHITECTURE=$(docker version --format '{{.Server.Arch}}') \
   -t jenkins:lts .
 
 docker run \
