@@ -2,9 +2,10 @@
 
 ![jenkins dind](img/dind.png)
 
-1. `./docker-in-docker/jenkins-dind.sh`
-2. localhost:8081
-3. `docker logs jenkins-master-dind` 후 초기 비밀번호 확인
+1. `cd docker-in-docker`
+2. `./jenkins-dind.sh`
+3. localhost:8081
+4. `docker logs jenkins-master-dind` 후 초기 비밀번호 확인
 
 <br>
 
@@ -12,9 +13,10 @@
 
 ![jenkins dind](img/dood.png)
 
-1. `./docker-outside-of-docker/jenkins-dood.sh`
-2. localhost:8082
-3. `docker logs jenkins-master-dood` 후 초기 비밀번호 확인
+1. `cd docker-outside-of-docker`
+2. `./jenkins-dood.sh`
+3. localhost:8082
+4. `docker logs jenkins-master-dood` 후 초기 비밀번호 확인
 
 <br>
 
