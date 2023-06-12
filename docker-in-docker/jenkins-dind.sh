@@ -18,7 +18,7 @@ docker run \
 
 docker build \
   --build-arg ARCHITECTURE=$(docker version --format '{{.Server.Arch}}') \
-  -t jenkins:lts .
+  -t jenkins:dind .
 
 docker run \
   --name jenkins-master-dind \
@@ -32,4 +32,4 @@ docker run \
   --publish 50001:50000 \
   --volume $(dirname $(realpath $0))/jenkins:/var/jenkins_home \
   --volume jenkins-docker-certs:/certs/client:ro \
-  jenkins:lts
+  jenkins:dind
