@@ -22,7 +22,7 @@
 
 # Jenkins Setting
 
-## 1. Install Plugins (Manage Jenkins > available plugins)
+## 1. Install Plugins (Manage Jenkins > Plugins > available plugins)
 - Build Timestamp
 - Post build task
 
@@ -53,8 +53,6 @@
 ## 4. Create item 'member'
 
 Freestyle project
-- JDK
-  - Java17
 
 ![](img/item-jdk.png)
 
@@ -89,6 +87,7 @@ Freestyle project
       docker rm -f member
       docker run -d --name member -p 8080:8080 -e DB_CONNECTION_URL=jdbc:mysql://172.90.9.209:3306/member_service -e DB_USER=root -e DB_PASSWORD=password member:latest
       ```
+    - 172.90.9.209: `ifconfig en0 | egrep -o 'inet ([0-9\.]*)' | awk '{print $2}'` 후 나오는 ip 사용
     - Run script only if all previous steps were successful
 
 ![](img/post-build-task.png)
