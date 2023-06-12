@@ -38,7 +38,9 @@
 - JDK
   - Name: Java17
   - Extract \*.zip/\*.tar.gz
-    - Download URL for binary archive: `https://download.oracle.com/java/17/archive/jdk-17.0.7_linux-aarch64_bin.tar.gz`
+    - Download URL for binary archive
+      - arm64: `https://download.oracle.com/java/17/archive/jdk-17.0.7_linux-aarch64_bin.tar.gz`
+      - amd64: `https://download.oracle.com/java/17/archive/jdk-17.0.7_linux-x64_bin.tar.gz`
     - Subdirectory of extracted archive: `jdk-17.0.7`
 
 ![](img/jdk.png)
