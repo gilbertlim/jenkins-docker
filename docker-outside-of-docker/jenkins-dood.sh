@@ -7,4 +7,5 @@ docker run \
   --publish 50002:50000 \
   --volume $(dirname $(realpath $0))/jenkins:/var/jenkins_home \
   --volume /var/run/docker.sock:/var/run/docker.sock \
-  jenkins:lts
+  --env JAVA_OPTS="-Xms1024m -Xmx1024m" \
+  jenkins/jenkins:lts

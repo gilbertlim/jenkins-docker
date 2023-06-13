@@ -32,4 +32,5 @@ docker run \
   --publish 50001:50000 \
   --volume $(dirname $(realpath $0))/jenkins:/var/jenkins_home \
   --volume jenkins-docker-certs:/certs/client:ro \
+  --env JAVA_OPTS="-Xms1024m -Xmx1024m" \
   jenkins:dind

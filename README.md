@@ -56,8 +56,6 @@
 
 Freestyle project
 
-![](img/item-jdk.png)
-
 - Source Code Management
   - Repository URL: `https://github.com/gilbertlim/member-service.git`
   - Branch Specifier: `*/main`
